@@ -10,6 +10,7 @@
   /* Primary */
 
   --red: hsl(4, 100%, 67%);
+  --light-red: hsl(3, 78%, 91%);
 
   /* Neutral */
 
@@ -126,8 +127,9 @@ body {
   padding: 0.9rem;
   border-radius: 0.4rem;
   border-width: 1.1px;
-  border-color: var(--grey);
+  border-color: var(--grey); /* set var(--red) by dom manipulation */
   border-style: solid;
+  background-color: transparent; /* set var(--light-red) by dom manipulation */
 }
 
 #email:focus {
