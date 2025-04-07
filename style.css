@@ -10,7 +10,7 @@
   /* Primary */
 
   --red: hsl(4, 100%, 67%);
-  --light-red: hsl(3, 78%, 91%);
+  --light-red: hsl(2, 69%, 92%);
 
   /* Neutral */
 
@@ -41,7 +41,7 @@ body {
 .form__card {
   background-color: var(--white);
   width: 55%;
-  display: grid; /* set none by dom manipulation */
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   border-radius: 1.2rem;
@@ -129,6 +129,7 @@ body {
   border-width: 1.1px;
   border-color: var(--grey); /* set var(--red) by dom manipulation */
   border-style: solid;
+  color: var(--blue-800); /* set var(--red) by dom manipulation */
   background-color: transparent; /* set var(--light-red) by dom manipulation */
 }
 
@@ -156,7 +157,7 @@ body {
 .message__container {
   background-color: var(--white);
   width: 30%;
-  display: flex; /* set none by dom manipulation */
+  display: none; /* set flex by dom manipulation */
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -362,4 +363,8 @@ body {
     padding: 3rem;
     border-radius: 1.2rem;
   }
+}
+
+.custom__hidden {
+  display: none;
 }
