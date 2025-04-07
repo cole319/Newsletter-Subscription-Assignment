@@ -59,7 +59,7 @@ emailInput.addEventListener("input", () => {
 
 /* Return to Form Card */
 
-dismissButton.addEventListener("click", function () {
+dismissButton.addEventListener("click", () => {
   successMessage.style.display = "none";
 
   // To handle defferent display property for smaller screen
@@ -68,8 +68,8 @@ dismissButton.addEventListener("click", function () {
 
 /* Check for Valid Email */
 
-function isValidEmail(email) {
+const isValidEmail = (email) => {
   // Email regex pattern
   const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return pattern.test(email);
-}
+};
