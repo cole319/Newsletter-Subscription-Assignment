@@ -1,0 +1,188 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+
+  --red: hsl(4, 100%, 67%);
+
+  /* Neutral */
+
+  --blue-800: hsl(234, 29%, 20%);
+  --blue-700: hsl(235, 18%, 26%);
+  --blue-600: hsl(236, 17%, 37%);
+  --grey: hsl(0, 0%, 58%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Body */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--blue-700);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* -------- FORM CARD ELEMENT -------- */
+
+.form__card {
+  background-color: var(--white);
+  width: 55%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  border-radius: 1.2rem;
+  margin: 10rem auto;
+  /* visibility: hidden; */
+}
+
+.banner {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__img {
+  width: 100%;
+}
+
+.form__container {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding: 2.5rem 2.5rem 2.5rem 3.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+  font-size: 0.8rem;
+  color: var(--blue-600);
+  font-weight: 500;
+}
+
+.form__container h1 {
+  font-size: 2.8rem;
+  color: var(--blue-800);
+}
+
+.form__list {
+  padding: 0.7rem 0rem 0.7rem 0rem;
+  list-style: none;
+}
+
+.form__list li {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  align-items: start;
+}
+
+.form__list li:not(:last-child) {
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.form__list li img {
+  height: 1rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#form span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+#form span p {
+  color: var(--red);
+  visibility: hidden;
+}
+
+#email {
+  padding: 0.9rem;
+  border-radius: 0.4rem;
+  border-width: 1.1px;
+  border-color: var(--grey);
+  border-style: solid;
+}
+
+#email:focus {
+  outline: none;
+  border-color: var(--grey);
+  border-width: 1.5px;
+}
+
+.button {
+  margin-top: 0.9rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: var(--white);
+  background-color: var(--blue-800);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* -------- SUCCESS MESSAGE ELEMENT -------- */
+
+.message__container {
+  background-color: var(--white);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 1.2rem;
+  margin: 10rem auto;
+  padding: 3rem;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--blue-600);
+  font-weight: 500;
+}
+
+.message__container img {
+  height: 3.5rem;
+}
+
+.message__container h1 {
+  font-size: 3rem;
+  color: var(--blue-800);
+}
+.message__container p span {
+  color: var(--blue-800);
+  font-weight: 700;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--grey);
+  padding: 2rem;
+}
+.attribution a {
+  color: var(--red);
+}
